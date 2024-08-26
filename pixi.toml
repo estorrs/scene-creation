@@ -1,0 +1,20 @@
+[project]
+name = "scene-creation"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["estorrs <epstorrs@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tasks]
+launch-jupyter = { cmd="jupyter notebook" }
+
+[dependencies]
+python = ">=3.12.5,<3.13"
+jupyter = ">=1.0.0,<1.1"
+numpy = ">=2.1.0,<2.2"
+pandas = ">=2.2.2,<2.3"
+matplotlib = ">=3.9.2,<3.10"
+
+[pypi-dependencies]
+fake-bpy-module = "*"
